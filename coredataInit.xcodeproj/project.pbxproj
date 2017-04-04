@@ -13,6 +13,7 @@
 		AC09E8BE1E931F7A0059386C /* coredataInit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC09E8BC1E931F7A0059386C /* coredataInit.xcdatamodeld */; };
 		AC09E8C01E931F7A0059386C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC09E8BF1E931F7A0059386C /* Assets.xcassets */; };
 		AC09E8C31E931F7A0059386C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC09E8C11E931F7A0059386C /* LaunchScreen.storyboard */; };
+		AC09E8CB1E93236B0059386C /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09E8CA1E93236B0059386C /* UIViewController+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC09E8BF1E931F7A0059386C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC09E8C21E931F7A0059386C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC09E8C41E931F7A0059386C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC09E8CA1E93236B0059386C /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC09E8C11E931F7A0059386C /* LaunchScreen.storyboard */,
 				AC09E8C41E931F7A0059386C /* Info.plist */,
 				AC09E8BC1E931F7A0059386C /* coredataInit.xcdatamodeld */,
+				AC09E8CA1E93236B0059386C /* UIViewController+CoreData.swift */,
 			);
 			path = coredataInit;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC09E8BE1E931F7A0059386C /* coredataInit.xcdatamodeld in Sources */,
+				AC09E8CB1E93236B0059386C /* UIViewController+CoreData.swift in Sources */,
 				AC09E8B81E931F7A0059386C /* ViewController.swift in Sources */,
 				AC09E8B61E931F7A0059386C /* AppDelegate.swift in Sources */,
 			);
