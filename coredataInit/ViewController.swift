@@ -49,6 +49,17 @@ class ViewController: UIViewController {
         tfDate.text = df.string(from: datePicker.date)
         cancel()
     }
+    
+    func delete(indexPath: IndexPath) {
+        
+        let task = list[indexPath.row] as Task
+        self.context.delete(task)
+        try! self.context.save()
+        
+        list.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        
+    }
 
     func loadTasks() {
         let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
@@ -118,15 +129,13 @@ class ViewController: UIViewController {
         } catch {
             
         }
-        
-        
     }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Deletar") { (action, indexPath) in
-            
+            self.delete(indexPath: indexPath)
         }
         
         let editAction = UITableViewRowAction(style: .default, title: "Editar") { (action, indexPath) in
